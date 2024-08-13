@@ -1,8 +1,16 @@
+@font-face {
+  font-family: 'Spider';
+  src: url('fonts/THEAMAZINGSPIDER-MAN.woff2') format('woff2'),
+      url('fonts/THEAMAZINGSPIDER-MAN.woff') format('woff');
+  font-weight: normal;
+  font-style:normal;
+}
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Spider";
 }
 
 body{
@@ -14,7 +22,7 @@ li {
   list-style-type: none;
   display: flex;
   align-items: center;
-  gap: 8px;
+  gap: 12px;
 }
 
 img {
@@ -31,7 +39,7 @@ img {
   display: grid;
   grid-template-rows: 100px 250px 200px;
   background-color: #be123c;
-  color: white;
+  color: rgb(255, 255, 255);
 }
 
 .sidebar-logo {
@@ -39,6 +47,10 @@ img {
   padding-top: 20px;
   padding-left: 20px;
   gap: 8px;
+}
+
+.sidebar-logo > h2 {
+  padding-top: 4px;
 }
 
 .sidebar-sec1 {
@@ -50,7 +62,6 @@ img {
 .sidebar-sec1 > ul {
   display: grid;
   grid-template-rows: repeat(6, 40px);
-  font-weight: 700;
 }
 
 .sidebar-sec2{
@@ -62,7 +73,6 @@ img {
 .sidebar-sec2 > ul {
   display: grid;
   grid-template-rows: repeat(3, 40px);
-  font-weight: 700;
 }
 
 
