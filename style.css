@@ -84,11 +84,13 @@ img {
   display: grid;
   grid-template-rows: repeat(2, 1fr);
   background-color: #447BBE;
+  box-shadow: 0 4px 2px -2px gray;
 }
 
 .header-sec1 {
   display: flex;
   justify-content: space-between;
+  color:white;
 }
 
 .header-sec1a {
@@ -126,6 +128,24 @@ input {
   align-items: center;
   justify-content: space-between;
 }
+
+.header-sec2a {
+  display: flex;
+  gap: 12px;
+  color: white;
+}
+
+button{
+  color: white;
+  background-color:#bb103b;
+  width: 80px;
+  height: 20px;
+  border-style: none;
+  border-radius: 10px;
+  text-align: center;
+  padding: 5px;
+}
+
 .main-content {
-  border: 2px solid black;
+  /* border: 2px solid black; */
 }
