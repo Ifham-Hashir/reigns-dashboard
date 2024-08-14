@@ -44,14 +44,13 @@ img {
 
 .sidebar-logo {
   display: flex;
-  padding-top: 20px;
+  padding-top: 24px;
   padding-left: 20px;
   gap: 8px;
+  font-size: 30px;
 }
 
-.sidebar-logo > h2 {
-  padding-top: 4px;
-}
+
 
 .sidebar-sec1 {
   display: flex;
@@ -62,6 +61,7 @@ img {
 .sidebar-sec1 > ul {
   display: grid;
   grid-template-rows: repeat(6, 40px);
+  
 }
 
 .sidebar-sec2{
@@ -79,16 +79,47 @@ img {
 /* HEADER */
 .header {
   padding: 20px;
+  padding-left: 40px;
+  padding-right: 40px;
   display: grid;
   grid-template-rows: repeat(2, 1fr);
+  background-color: #447BBE;
 }
 
 .header-sec1 {
   display: flex;
-  align-items: center;
-  justify-content: space-evenly;
+  justify-content: space-between;
 }
 
+.header-sec1a {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.search, .notification{
+  width: 25px;
+  height: 25px;
+}
+
+input {
+  width: 500px;
+  border-radius: 50px;
+  border-style: none;
+  height: 20px;
+}
+
+.header-sec1b {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.spiderman-logo {
+  filter: none;
+  height: 50px;
+  width: 50px;
+}
 
 .header-sec2 {
   display: flex;
@@ -96,5 +127,5 @@ img {
   justify-content: space-between;
 }
 .main-content {
-  
+  border: 2px solid black;
 }
