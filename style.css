@@ -157,7 +157,7 @@ button{
   padding: 30px;
   padding-top: 80px;
   display: grid;
-  grid-template-columns: 2fr 1fr;
+  grid-template-columns: 4fr 1fr;
   gap: 25px;
   position: relative;
 }
@@ -170,12 +170,12 @@ button{
 
 .left {
   display: grid;
-  grid-template: 1fr 1fr 1fr / 1fr 1fr;
+  grid-template: 1fr / repeat(auto-fill, minmax(360px, 1fr));
   gap: 20px;
 }
 
 .card {
-  width: 400px;
+  width: auto;
   height: 200px;
   padding: 25px;
   border-left: #447BBE 10px solid;
@@ -189,31 +189,33 @@ button{
   gap: 8px;
 }
 
+
+
 .right {
   justify-items: end;
   display: grid;
-  grid-template-rows: 1fr 1fr;
-  gap: 80px;
+  grid-template-rows: 300px 280px;
+  gap: 60px;
 }
 
 .announcement-heading{
   position: absolute;
   top: 50px;
-  left: 875px;
+  right: 170px;
 }
 .trending-heading {
   position:absolute;
   top: 410px;
-  left: 875px;
+  right: 220px;
 }
 .announcements {
   width: 250px;
-  height: auto;
+  height: 300px;
   border: 2px solid black;
 }
 
 .trending {
   width: 250px;
-  height: auto;
+  height: 280px;
   border: 2px solid black;
 }
