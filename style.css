@@ -155,15 +155,16 @@ button{
 
 .main-content {
   padding: 30px;
+  padding-top: 80px;
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 25px;
   position: relative;
 }
 
-.projects {
+.project-heading {
   position: absolute;
-  top: 10px;
+  top: 50px;
   left: 30px;
 }
 
@@ -183,9 +184,19 @@ button{
   justify-items: end;
   display: grid;
   grid-template-rows: 1fr 1fr;
-  gap: 12px;
+  gap: 80px;
 }
 
+.announcement-heading{
+  position: absolute;
+  top: 50px;
+  left: 875px;
+}
+.trending-heading {
+  position:absolute;
+  top: 410px;
+  left: 875px;
+}
 .announcements {
   width: 250px;
   height: auto;
