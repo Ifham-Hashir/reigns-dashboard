@@ -15,7 +15,7 @@
 
 body{
   display: grid;
-  grid-template: 20vh 80vh / 250px 5fr;
+  grid-template: 30vh 1fr / 250px 5fr;
 }
 
 li {
@@ -133,6 +133,13 @@ input {
   display: flex;
   gap: 12px;
   color: white;
+  align-items: center;
+}
+
+.spiderman-logob {
+  filter: none;
+  height: 100px;
+  width: 100px;
 }
 
 button{
@@ -150,7 +157,7 @@ button{
   padding: 30px;
   display: grid;
   grid-template-columns: 2fr 1fr;
-  gap: 12px;
+  gap: 25px;
   position: relative;
 }
 
@@ -163,11 +170,30 @@ button{
 .left {
   display: grid;
   grid-template: 1fr 1fr 1fr / 1fr 1fr;
-  gap: 12px;
+  gap: 20px;
+}
+
+.card {
+  width: 400px;
+  height: 200px;
+  border: 2px solid black;
 }
 
 .right {
+  justify-items: end;
   display: grid;
   grid-template-rows: 1fr 1fr;
   gap: 12px;
+}
+
+.announcements {
+  width: 250px;
+  height: auto;
+  border: 2px solid black;
+}
+
+.trending {
+  width: 250px;
+  height: auto;
+  border: 2px solid black;
 }
