@@ -165,7 +165,7 @@ button{
 .project-heading {
   position: absolute;
   top: 50px;
-  left: 30px;
+  left: 50px;
 }
 
 .left {
@@ -210,8 +210,6 @@ button{
 }
 .announcements {
   height: 300px;
-  padding: 12px;
-  font-size: 15px;
 }
 
 .announcements > div {
@@ -226,6 +224,19 @@ button{
 
 .trending {
   height: 280px;
+  gap: 16px;
+}
+
+.trending > div {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.trending-img {
+  filter: none;
+  width: 80px;
+  height: 80px;
 }
 
 .announcements, .trending {
@@ -236,6 +247,9 @@ button{
   color: white;
   border-left: #be123c 10px solid;
   border-right: #be123c 10px solid;
+  display: flex;
+  flex-direction: column;
+  padding: 12px;
 }
 
 
@@ -279,3 +293,18 @@ ul > * { opacity: 0.9; transform: scale(0.9); }
 /* Fade out all items when the parent is hovered */
 
 ul > *:hover { opacity: 1; transform: scale(1); transition-delay: 0ms, 0ms; }
+
+
+.header-sec2b { visibility: hidden; }
+/* Prevents :hover from triggering in the gaps between items */
+
+.header-sec2b > * { visibility: visible; }
+/* Brings the child items back in, even though the parent is `hidden` */
+
+.header-sec2b > * { transition: opacity 150ms linear 100ms, transform 150ms ease-in-out 100ms; }
+/* Makes the fades smooth with a slight delay to prevent jumps as the mouse moves between items */
+
+.header-sec2b > * { opacity: 0.9; transform: scale(0.9); }
+/* Fade out all items when the parent is hovered */
+
+.header-sec2b > *:hover { opacity: 1; transform: scale(1); transition-delay: 0ms, 0ms; }
