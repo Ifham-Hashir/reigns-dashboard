@@ -209,13 +209,31 @@ button{
   right: 220px;
 }
 .announcements {
-  width: 250px;
   height: 300px;
-  border: 2px solid black;
+  padding: 12px;
+  font-size: 15px;
 }
 
+.announcements > div {
+  width: max-width;
+  height: 90px;
+  padding: 10px;
+  border-bottom: 2PX SOLID WHITE;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+
 .trending {
-  width: 250px;
   height: 280px;
-  border: 2px solid black;
+}
+
+.announcements, .trending {
+  width: 250px;
+  box-shadow: 0 4px 2px -2px gray;
+  background-color: #447BBE;
+  border-radius: 10px;
+  color: white;
+  border-left: #be123c 10px solid;
+  border-right: #be123c 10px solid;
 }
